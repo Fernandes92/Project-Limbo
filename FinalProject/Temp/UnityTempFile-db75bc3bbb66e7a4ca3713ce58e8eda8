@@ -1,0 +1,64 @@
+-debug
+-target:library
+-i:UnityEngine
+-i:System.Collections
+-base:UnityEngine.MonoBehaviour
+-nowarn:BCW0016
+-nowarn:BCW0003
+-method:Main
+-out:Temp/Assembly-UnityScript-Editor.dll
+-x-type-inference-rule-attribute:UnityEngineInternal.TypeInferenceRuleAttribute
+-define:UNITY_4_5_4
+-define:UNITY_4_5
+-define:UNITY_STANDALONE_WIN
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_NEW_HIERARCHY 
+-define:ENABLE_AUDIO_FMOD
+-define:UNITY_STANDALONE
+-define:ENABLE_MONO
+-define:ENABLE_TERRAIN
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_MOVIES
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:INCLUDE_WP_BLUE_SUPPORT
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_WIN
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
+-r:Library/ScriptAssemblies/Assembly-UnityScript.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-i:UnityEditor
+"Assets/Packages/SciFi level/Editor/Image Effects/AntialiasingAsPostEffectEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/BloomAndLensFlaresEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/BloomEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/CameraMotionBlurEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/ColorCorrectionCurvesEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/ColorCorrectionLutEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/DepthOfField34Editor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/DepthOfFieldScatterEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/EdgeDetectEffectNormalsEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/NoiseAndGrainEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/SunShaftsEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/TiltShiftEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/TonemappingEditor.js"
+"Assets/Packages/SciFi level/Editor/Image Effects/VignettingEditor.js"
