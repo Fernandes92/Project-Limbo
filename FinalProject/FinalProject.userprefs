@@ -1,17 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Button.cs">
     <Files>
-      <File FileName="Assets\Scripts\Box.cs" Line="37" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="26" Column="4" />
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="95" Column="3" />
+      <File FileName="Assets\Scripts\TriggerTrap.cs" Line="6" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="63" Column="68" />
+      <File FileName="Assets\Scripts\OnButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Button.cs" Line="10" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="GameManager.cs" selected="True" />
+              <Node name="Button.cs" selected="True" />
             </Node>
           </Node>
         </State>

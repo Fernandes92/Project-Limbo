@@ -111,6 +111,7 @@
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\SciFi_Door\readme.txt" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />

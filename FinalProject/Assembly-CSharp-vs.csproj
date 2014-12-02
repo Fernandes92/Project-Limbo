@@ -65,8 +65,11 @@
      <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
+     <Compile Include="Assets\Scripts\CameraManager.cs" />
+     <Compile Include="Assets\Scripts\CameraPlayer.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\Elevator.cs" />
+     <Compile Include="Assets\Scripts\GUIBasic.cs" />
      <Compile Include="Assets\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gun.cs" />
@@ -80,6 +83,7 @@
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\RopePlatformSystem.cs" />
      <Compile Include="Assets\Scripts\TeleportPad.cs" />
+     <Compile Include="Assets\Scripts\TriggerTrap.cs" />
      <None Include="Assets\Packages\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
@@ -131,6 +135,7 @@
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\SciFi_Door\readme.txt" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />

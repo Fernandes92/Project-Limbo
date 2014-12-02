@@ -6,7 +6,10 @@ public class GameManager : MonoBehaviour {
 	
 	public GameObject[] scenesPrefab;
 	public PlayerController playerPrefab;
+	public CameraPlayer cameraPrefab;
+	public GameObject menu;
 
+	private CameraPlayer cameraPlayer;
 	private PlayerController playerController;
 	private List<GameObject> listScene = new List<GameObject>();
 	private bool canCheck = true;
@@ -14,21 +17,39 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
-		this.Initialize ();
+		//this.Initialize ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
-		if (this.playerController.isPlayerDead && canCheck) {
+		if(this.playerController != null){
 
-			StartCoroutine(this.ResetScene());
+			if (this.playerController.isPlayerDead && canCheck) {
+				
+				StartCoroutine(this.ResetScene());
+				
+			}
 
+			/*
+			if (Input.GetKeyDown (KeyCode.Escape)) {
+				
+				if(menu.activeSelf){
+					
+					menu.SetActive(false);
+				}else if(!menu.activeSelf){
+					
+					menu.SetActive(true);
+				}
+			}*/
 		}
+
 	}
 
 
-	private void Initialize(){
+	public void Initialize(){
+
+		menu.SetActive(false);
 
 		for(int i = 0; i < scenesPrefab.Length; i++){
 
@@ -42,8 +63,10 @@ public class GameManager : MonoBehaviour {
 		GameObject _initialposition = GameObject.Find("Scene0/CheckPoint0");
 
 		this.playerController = Instantiate (this.playerPrefab, _initialposition.transform.position, this.playerPrefab.transform.rotation) as PlayerController;
-
+		playerController.transform.name = "Player";
 		this.playerController.Initialize (_initialposition.transform.position);
+
+		this.cameraPlayer = Instantiate (cameraPrefab ,Vector3.zero, this.cameraPrefab.transform.rotation) as CameraPlayer;
 	}
 
 	private IEnumerator ResetScene(){

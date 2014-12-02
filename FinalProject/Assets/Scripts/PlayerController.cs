@@ -10,14 +10,14 @@ public class PlayerController : PlayerManager {
 	public float pushPower = 1.5f;
 
 
-
 	public Vector3 movement = Vector3.zero; //Vector3 with the moviment of the player (x, y, 0)
 	private CharacterController controller;
 	private float pastKeyDirection; //Last key pressed
 	private float speedMultiplier; //Variable with the multipler of speed (RUN or WALK)
 	private float idleTime = 10.0f;
+
 	//public bool onStair = false;
-	Vector3 climbingStairs = new Vector3 (0f, 0.5f, 0f);
+	//Vector3 climbingStairs = new Vector3 (0f, 0.5f, 0f);
 
 	private const float WALK = 1.0f; 
 	private const float RUN = 1.5f;
@@ -78,11 +78,11 @@ public class PlayerController : PlayerManager {
 			_body.velocity = pushDir * pushPower;
 		}
 
-
+		/*
 		if (Input.GetKey (KeyCode.UpArrow) && hit.collider.gameObject.name == "Stair") {
 				
 			this.Stair();
-		}
+		}*/
 	}
 
 
@@ -166,16 +166,16 @@ public class PlayerController : PlayerManager {
 			
 			movement.x = this.getSpeedMultiplier() * speed;
 
-			//Quaternion rotation = Quaternion.LookRotation(Vector3.right);
-			//this.transform.rotation = rotation;
+			Quaternion rotation = Quaternion.LookRotation(Vector3.right);
+			this.transform.rotation = rotation;
 
 		} 
 		else if(Input.GetAxis ("Horizontal") == BACKWARD ) {
 			
 			movement.x = -this.getSpeedMultiplier() * speed;
 
-			//Quaternion rotation = Quaternion.LookRotation(Vector3.left);
-			//this.transform.rotation = rotation;
+			Quaternion rotation = Quaternion.LookRotation(Vector3.left);
+			this.transform.rotation = rotation;
 
 
 		} 
@@ -253,11 +253,12 @@ public class PlayerController : PlayerManager {
 			
 
 	}
-	
+
+	/*
 	private void Stair(){
 
 		movement.y += this.climbingStairs.y;
-	}
+	}*/
 
 	private void IdleTime(){
 		
