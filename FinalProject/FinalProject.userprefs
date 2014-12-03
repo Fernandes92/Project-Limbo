@@ -1,20 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EndTalk.cs">
-    <Files>
-      <File FileName="Assets\Scripts\EndTalk.cs" Line="15" Column="3" />
-      <File FileName="Assets\Scripts\GUIBasic.cs" Line="39" Column="3" />
-      <File FileName="Assets\Scripts\InstructionInteractActive.cs" Line="14" Column="3" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="37" Column="34" />
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="72" Column="3" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="99" Column="19" />
-    </Files>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="EndTalk.cs" selected="True" />
+              <Node name="TriggerTrap.cs" selected="True" />
             </Node>
           </Node>
         </State>

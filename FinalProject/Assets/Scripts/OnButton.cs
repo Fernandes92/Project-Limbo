@@ -6,5 +6,6 @@ public class OnButton : Button {
 	sealed public override void ActionOnTrigger(){
 
 		this.rigidbody.useGravity = true;
+		this.rigidbody.isKinematic = false;
 	}
 }
