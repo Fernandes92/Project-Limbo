@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	public PlayerController playerPrefab;
 	public CameraPlayer cameraPrefab;
 	public GameObject menu;
+	public Camera cameraMenu, cameraEnd;
 
 	private CameraPlayer cameraPlayer;
 	private PlayerController playerController;
@@ -29,6 +30,13 @@ public class GameManager : MonoBehaviour {
 				
 				StartCoroutine(this.ResetScene());
 				
+			}
+
+			if(this.playerController.reachEnd){
+
+				//cameraMenu.enabled = false;
+				cameraPlayer.gameObject.SetActive(false);
+				cameraEnd.gameObject.SetActive(true);
 			}
 
 			/*

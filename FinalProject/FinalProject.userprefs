@@ -1,20 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Button.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EndTalk.cs">
     <Files>
-      <File FileName="Assets\Scripts\TriggerTrap.cs" Line="6" Column="1" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="63" Column="68" />
-      <File FileName="Assets\Scripts\OnButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Button.cs" Line="10" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\EndTalk.cs" Line="15" Column="3" />
+      <File FileName="Assets\Scripts\GUIBasic.cs" Line="39" Column="3" />
+      <File FileName="Assets\Scripts\InstructionInteractActive.cs" Line="14" Column="3" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="37" Column="34" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="72" Column="3" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="99" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="Button.cs" selected="True" />
+              <Node name="EndTalk.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +28,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Igor\Documents\FinalProject\Assets\Scripts\End.cs" line="9" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

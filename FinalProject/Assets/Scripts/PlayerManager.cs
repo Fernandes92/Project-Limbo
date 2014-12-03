@@ -11,7 +11,9 @@ public class PlayerManager : MonoBehaviour {
 	private string aniamtionName;
 	
 	protected bool isDead;
-	string _aux;
+	protected bool arriveEnd = false;
+
+
 	public bool isPlayerDead{
 
 		get{
@@ -28,6 +30,13 @@ public class PlayerManager : MonoBehaviour {
 		}
 	}
 
+	public bool reachEnd{
+
+		get{
+
+			return this.arriveEnd;
+		}
+	}
 
 	public void Start(){
 
@@ -50,9 +59,15 @@ public class PlayerManager : MonoBehaviour {
 
 		if(col.gameObject.tag == "CheckPoint"){
 
+			string _aux;
 			_aux = col.gameObject.name.Substring(col.gameObject.name.Length - 1);
 			this.checkPointPosition = collider.gameObject.transform.position;
 			this.checkPointNumber = int.Parse(_aux);
+		}
+
+		if (col.gameObject.tag == "End") {
+				
+			arriveEnd = true;
 		}
 
 		/*

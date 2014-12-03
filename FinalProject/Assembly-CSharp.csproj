@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\CameraPlayer.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\Elevator.cs" />
+     <Compile Include="Assets\Scripts\EndTalk.cs" />
      <Compile Include="Assets\Scripts\GUIBasic.cs" />
      <Compile Include="Assets\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
