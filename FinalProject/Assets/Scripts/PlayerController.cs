@@ -108,7 +108,7 @@ public class PlayerController : PlayerManager {
 
 						}
 
-						if (controller.isGrounded == true) {
+						if (true /*controller.isGrounded == true*/) {
 			
 								this.Move ();
 
@@ -141,6 +141,11 @@ public class PlayerController : PlayerManager {
 			
 			
 								this.MoveJump ();
+								this.SetAnimation ("Jump");
+						}
+
+						if(controller.isGrounded == false){
+
 								this.SetAnimation ("Jump");
 						}
 		
