@@ -5,6 +5,9 @@ public class GUIBasic : MonoBehaviour {
 
 	public GameManager gamemanager;
 
+	private bool principalMenu = true;
+	private bool loadMenu = false;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -22,19 +25,69 @@ public class GUIBasic : MonoBehaviour {
 
 		//Buttons
 
-		if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 130, 250, 50), "Start Game")) {
+		if(principalMenu){
+
+			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 130, 250, 50), "Start Game")) {
 				
-			gamemanager.Initialize();
+				gamemanager.Load(0);
+			}
+			
+			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 70 , 250, 50), "Load")){
+
+				principalMenu = false;
+				loadMenu = true;
+			}
+			
+			GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "");
+			GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "");
+			
+			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 120, 250, 50), "Exit")) {
+				
+				Application.Quit();
+			}
 		}
 
-		GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 70 , 250, 50), "");
-		GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "");
-		GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "");
+		if(loadMenu){
 
-		if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 120, 250, 50), "Exit")) {
+			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 130, 250, 50), "0")) {
+
+				principalMenu = true;
+				loadMenu = false;
+				gamemanager.Load(0);
+
+			}
+			
+			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 70 , 250, 50), "1")){
+
+				principalMenu = true;
+				loadMenu = false;
+				gamemanager.Load(1);
+			}
+			
+			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "2")){
+
+				principalMenu = true;
+				loadMenu = false;
+				gamemanager.Load(2);
+			}
+
+			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "3")){
+
+				principalMenu = true;
+				loadMenu = false;
+				gamemanager.Load(3);
+			}
+
+			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 120, 250, 50), "Back")){
 				
-			Application.Quit();
+				principalMenu = true;
+				loadMenu = false;
+
+			}
+
+				
 		}
+
 
 	}
 }

@@ -1,15 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUIBasic.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="146" Column="4" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUIManager.cs" Line="6" Column="2" />
+      <File FileName="Assets\Scripts\GUIBasic.cs" Line="81" Column="97" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="PlayerController.cs" selected="True" />
+              <Node name="GUIBasic.cs" selected="True" />
             </Node>
           </Node>
         </State>

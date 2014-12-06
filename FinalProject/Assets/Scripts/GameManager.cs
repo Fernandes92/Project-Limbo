@@ -54,29 +54,6 @@ public class GameManager : MonoBehaviour {
 
 	}
 
-
-	public void Initialize(){
-
-		menu.SetActive(false);
-
-		for(int i = 0; i < scenesPrefab.Length; i++){
-
-			GameObject _aux = Instantiate(this.scenesPrefab[i], this.scenesPrefab[i].transform.position, this.scenesPrefab[i].transform.rotation) as GameObject;
-
-			_aux.transform.name = "Scene" + i;
-
-			listScene.Insert(i, _aux);
-		}
-
-		GameObject _initialposition = GameObject.Find("Scene0/CheckPoint0");
-
-		this.playerController = Instantiate (this.playerPrefab, _initialposition.transform.position, this.playerPrefab.transform.rotation) as PlayerController;
-		playerController.transform.name = "Player";
-		this.playerController.Initialize (_initialposition.transform.position);
-
-		this.cameraPlayer = Instantiate (cameraPrefab ,Vector3.zero, this.cameraPrefab.transform.rotation) as CameraPlayer;
-	}
-
 	private IEnumerator ResetScene(){
 
 		this.canCheck = false;
@@ -96,5 +73,27 @@ public class GameManager : MonoBehaviour {
 
 		this.canCheck = true;
 		this.playerController.RevivePlayer ();
+	}
+
+	public void Load(int scene){
+
+		menu.SetActive(false);
+
+		for(int i = 0; i < scenesPrefab.Length; i++){
+			
+			GameObject _aux = Instantiate(this.scenesPrefab[i], this.scenesPrefab[i].transform.position, this.scenesPrefab[i].transform.rotation) as GameObject;
+			
+			_aux.transform.name = "Scene" + i;
+			
+			listScene.Insert(i, _aux);
+		}
+		
+		GameObject _initialposition = GameObject.Find("Scene" + scene + "/CheckPoint" + scene);
+		
+		this.playerController = Instantiate (this.playerPrefab, _initialposition.transform.position, this.playerPrefab.transform.rotation) as PlayerController;
+		playerController.transform.name = "Player";
+		this.playerController.Initialize (_initialposition.transform.position);
+		
+		this.cameraPlayer = Instantiate (cameraPrefab ,Vector3.zero, this.cameraPrefab.transform.rotation) as CameraPlayer;
 	}
 }

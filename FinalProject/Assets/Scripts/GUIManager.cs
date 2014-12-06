@@ -3,6 +3,7 @@ using System.Collections;
 
 public class GUIManager : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 	
