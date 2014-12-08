@@ -5,9 +5,9 @@ public class GUIBasic : MonoBehaviour {
 
 	public GameManager gamemanager;
 
-	private bool principalMenu = true;
-	private bool loadMenu = false;
-
+	private bool principalMenu = false;
+	private bool sceneMenu = false;
+	private int lastScene = 0;
 	// Use this for initialization
 	void Start () {
 	
@@ -27,18 +27,22 @@ public class GUIBasic : MonoBehaviour {
 
 		if(principalMenu){
 
-			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 130, 250, 50), "Start Game")) {
+			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 130, 250, 50), "New Game")) {
 				
 				gamemanager.Load(0);
 			}
 			
 			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 70 , 250, 50), "Load")){
 
-				principalMenu = false;
-				loadMenu = true;
+				gamemanager.Load(lastScene);
 			}
 			
-			GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "");
+			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "Scenes")){
+
+				principalMenu = false;
+				sceneMenu = true;
+			}
+
 			GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "");
 			
 			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 120, 250, 50), "Exit")) {
@@ -47,47 +51,65 @@ public class GUIBasic : MonoBehaviour {
 			}
 		}
 
-		if(loadMenu){
+		if(sceneMenu){
+
 
 			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 130, 250, 50), "0")) {
-
+					
 				principalMenu = true;
-				loadMenu = false;
+				sceneMenu = false;
 				gamemanager.Load(0);
 
 			}
-			
-			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 70 , 250, 50), "1")){
 
-				principalMenu = true;
-				loadMenu = false;
-				gamemanager.Load(1);
+			if(lastScene >= 1){
+
+				if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 70 , 250, 50), "1")){
+					
+					principalMenu = true;
+					sceneMenu = false;
+					gamemanager.Load(1);
+				}
+			}
+
+
+			if(lastScene >= 2){
+
+				if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "2")){
+
+					principalMenu = true;
+					sceneMenu = false;
+					gamemanager.Load(2);
+				}
+			}
+
+			if(lastScene >=3){
+
+				if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "3")){
+						
+					principalMenu = true;
+					sceneMenu = false;
+					gamemanager.Load(3);
+				}
 			}
 			
-			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 - 10 , 250, 50), "2")){
-
-				principalMenu = true;
-				loadMenu = false;
-				gamemanager.Load(2);
-			}
-
-			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "3")){
-
-				principalMenu = true;
-				loadMenu = false;
-				gamemanager.Load(3);
-			}
 
 			if(GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 120, 250, 50), "Back")){
 				
 				principalMenu = true;
-				loadMenu = false;
+				sceneMenu = false;
 
 			}
-
+		
 				
 		}
 
 
+	}
+
+	public void InitializeGUI(int scene){
+
+		lastScene = scene;
+		principalMenu = true;
 	}
 }

@@ -7,18 +7,22 @@ public class GameManager : MonoBehaviour {
 	public GameObject[] scenesPrefab;
 	public PlayerController playerPrefab;
 	public CameraPlayer cameraPrefab;
-	public GameObject menu;
+	public GUIBasic menu;
 	public Camera cameraMenu, cameraEnd;
 
 	private CameraPlayer cameraPlayer;
 	private PlayerController playerController;
 	private List<GameObject> listScene = new List<GameObject>();
 	private bool canCheck = true;
+	private DataBase db;
 
 	// Use this for initialization
 	void Start () {
 	
-		//this.Initialize ();
+		db = new DataBase ();
+		db.DatabaseCheck ();
+
+		menu.InitializeGUI (db.SelectlastScene());
 	}
 	
 	// Update is called once per frame
@@ -77,7 +81,7 @@ public class GameManager : MonoBehaviour {
 
 	public void Load(int scene){
 
-		menu.SetActive(false);
+		menu.gameObject.SetActive(false);
 
 		for(int i = 0; i < scenesPrefab.Length; i++){
 			

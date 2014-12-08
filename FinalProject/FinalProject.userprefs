@@ -1,15 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUIBasic.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUIManager.cs" Line="6" Column="2" />
-      <File FileName="Assets\Scripts\GUIBasic.cs" Line="81" Column="97" />
+      <File FileName="Assets\Scripts\CheckPoint.cs" Line="20" Column="1" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="23" Column="1" />
+      <File FileName="Assets\Scripts\GUIBasic.cs" Line="100" Column="8" />
+      <File FileName="Assets\Database\DataBase.cs" Line="61" Column="99" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Database" expanded="True" />
             <Node name="Scripts" expanded="True">
               <Node name="GUIBasic.cs" selected="True" />
             </Node>
@@ -27,6 +29,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Igor\Documents\FinalProject\Assets\Scripts\End.cs" line="9" />
+      <Breakpoint file="C:\Users\Igor\Documents\FinalProject\Assets\Scripts\DataBase.cs" line="14" />
+      <Breakpoint file="C:\Users\Igor\Documents\FinalProject\Assets\Scripts\CheckPoint.cs" line="18" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

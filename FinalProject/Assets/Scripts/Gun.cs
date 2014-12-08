@@ -27,7 +27,7 @@ public class Gun : MonoBehaviour {
 	private DrawLine lazerSight;
 	private bool hitPlayer = false;
 	private bool gunOverHeat = false;
-	private bool gunCool = true;
+//	private bool gunCool = true;
 	private Vector3 initialPosition;
 	private Vector3 endPosition;
 	private Vector3 direction = Vector3.zero;

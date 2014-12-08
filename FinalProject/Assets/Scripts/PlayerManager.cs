@@ -37,12 +37,7 @@ public class PlayerManager : MonoBehaviour {
 			return this.arriveEnd;
 		}
 	}
-
-	public void Start(){
-
-
-	}
-
+	
 
 	void OnTriggerEnter(Collider col){
 
