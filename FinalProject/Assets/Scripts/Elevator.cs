@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class Elevator : MonoBehaviour {
 
+
 	enum Directions{
 		Up,
 		Down,
@@ -10,6 +11,7 @@ public class Elevator : MonoBehaviour {
 		Left
 	}
 
+	/*
 	public struct Door{
 
 		public GameObject door;
@@ -17,7 +19,7 @@ public class Elevator : MonoBehaviour {
 		public MeshRenderer meshRender;
 
 
-	};
+	};*/
 
 
 	public float movementSpeed;

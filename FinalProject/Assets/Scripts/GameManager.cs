@@ -8,13 +8,17 @@ public class GameManager : MonoBehaviour {
 	public PlayerController playerPrefab;
 	public CameraPlayer cameraPrefab;
 	public GUIBasic menu;
+	public MenuPause pauseMenu;
 	public Camera cameraMenu, cameraEnd;
+
 
 	private CameraPlayer cameraPlayer;
 	private PlayerController playerController;
 	private List<GameObject> listScene = new List<GameObject>();
 	private bool canCheck = true;
 	private DataBase db;
+	private bool gamerunning = false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +27,7 @@ public class GameManager : MonoBehaviour {
 		db.DatabaseCheck ();
 
 		menu.InitializeGUI (db.SelectlastScene());
+
 	}
 	
 	// Update is called once per frame
@@ -43,17 +48,11 @@ public class GameManager : MonoBehaviour {
 				cameraEnd.gameObject.SetActive(true);
 			}
 
-			/*
+
 			if (Input.GetKeyDown (KeyCode.Escape)) {
-				
-				if(menu.activeSelf){
-					
-					menu.SetActive(false);
-				}else if(!menu.activeSelf){
-					
-					menu.SetActive(true);
-				}
-			}*/
+
+				pauseMenu.PauseActive();
+			}
 		}
 
 	}

@@ -43,7 +43,7 @@ public class GUIBasic : MonoBehaviour {
 				sceneMenu = true;
 			}
 
-			GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "");
+			GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 60 , 250, 50), "Credits");
 			
 			if (GUI.Button (new Rect (Screen.width / 2 - 110, Screen.height / 2 + 120, 250, 50), "Exit")) {
 				

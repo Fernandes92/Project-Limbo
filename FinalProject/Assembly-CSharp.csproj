@@ -76,11 +76,11 @@
      <Compile Include="Assets\Scripts\GUIManager.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Gun.cs" />
-     <Compile Include="Assets\Scripts\IObjectReset.cs" />
      <Compile Include="Assets\Scripts\InstructionInteractActive.cs" />
      <Compile Include="Assets\Scripts\InstructionJump.cs" />
      <Compile Include="Assets\Scripts\InstructionMovement.cs" />
      <Compile Include="Assets\Scripts\InstructionRun.cs" />
+     <Compile Include="Assets\Scripts\MenuPause.cs" />
      <Compile Include="Assets\Scripts\OnButton.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
