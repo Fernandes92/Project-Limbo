@@ -26,10 +26,14 @@ public class Elevator : MonoBehaviour {
 	public bool verticalElevator = false;
 	public GameObject doorRight, doorLeft;
 	public bool rightDoorInitialOpen = false, leftDoorInitialOpen = false;
+	public bool activeButtonMove = false, needPressButtonToMove = false;
+	public Trigger moveButton;
+	public Light light;
+
 	private Vector3 direction = Vector3.zero;
 	private int directionHorizontal = (int)Directions.Right;
 	private int directionVertical = (int)Directions.Up;
-	private bool moving = false;
+	private bool moving = false, canCall = true;
 	private List<GameObject> objectsInside = new List<GameObject>();
 	//private Door doorRight, doorLeft;
 
@@ -52,6 +56,20 @@ public class Elevator : MonoBehaviour {
 				return Vector3.up;
 			else
 				return Vector3.down;
+		}
+	}
+
+	private bool isMoveButtonActive{
+
+		get{
+
+			if(activeButtonMove){
+
+				return moveButton.stateTrigger;
+			}else{
+
+				return false;
+			}
 		}
 	}
 
@@ -78,19 +96,73 @@ public class Elevator : MonoBehaviour {
 			this.OpenDoor("DoorLeft");
 		}
 
+		if (moveButton == null) {
 
+			activeButtonMove = false;
+			needPressButtonToMove = false;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (this.verticalElevator) {
+
+			if(!needPressButtonToMove){
+
+				if(moving){
+					
+					
+					this.VertivalMove();
+				}else if(isMoveButtonActive && canCall){
+					
+					CloseDoors();
+					Move ();
+					
+				}
+			}else{
+
+				lightActive(isMoveButtonActive);
+
+				if(moving && isMoveButtonActive){
+					
+					
+					VertivalMove();
+				}else{
+
+					moving = false;
+				}
+			}
+
 				
-			if(moving)
-				this.VertivalMove();
 		}else{
 
-			if(moving)
-				this.HorizontalMove();
+			if(!needPressButtonToMove){
+				if(moving){
+					
+					
+					HorizontalMove();
+				}else if(isMoveButtonActive && canCall){
+					
+					CloseDoors();
+					Move ();
+					
+				}
+			}else{
+
+				lightActive(isMoveButtonActive);
+
+
+				if(moving && isMoveButtonActive){
+					
+					
+					HorizontalMove();
+				}else{
+
+					moving = false;
+				}
+			}
+
+
 		}
 
 	}
@@ -221,5 +293,17 @@ public class Elevator : MonoBehaviour {
 		this.doorRight.SetActive(true);
 
 		this.doorLeft.SetActive(true);
+	}
+
+	private void lightActive(bool active){
+
+		if(active){
+			
+			light.enabled = true;
+		}else{
+			
+			light.enabled = false;
+		}
+
 	}
 }

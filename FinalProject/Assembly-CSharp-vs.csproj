@@ -66,9 +66,12 @@
      <Compile Include="Assets\Scripts\Box.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
+     <Compile Include="Assets\Scripts\CameraEnd.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\CameraPlayer.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
+     <Compile Include="Assets\Scripts\DestroyBox.cs" />
+     <Compile Include="Assets\Scripts\DieActive.cs" />
      <Compile Include="Assets\Scripts\DrawLine.cs" />
      <Compile Include="Assets\Scripts\Elevator.cs" />
      <Compile Include="Assets\Scripts\EndTalk.cs" />
@@ -84,9 +87,11 @@
      <Compile Include="Assets\Scripts\OnButton.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\RopeBoxTrap.cs" />
+     <Compile Include="Assets\Scripts\RopeDieTrapAction.cs" />
      <Compile Include="Assets\Scripts\RopePlatformSystem.cs" />
      <Compile Include="Assets\Scripts\TeleportPad.cs" />
-     <Compile Include="Assets\Scripts\TriggerTrap.cs" />
+     <Compile Include="Assets\Scripts\Trigger.cs" />
      <None Include="Assets\Packages\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />

@@ -129,7 +129,7 @@ public class PlayerController : PlayerManager {
 						}
 		
 						//Jump with y aceleration
-						if (Input.GetButtonDown("Jump") && controller.isGrounded == true && movement.x == IDLE) {
+						if (Input.GetKeyDown(KeyCode.UpArrow) && controller.isGrounded == true && movement.x == IDLE) {
 			
 			
 								this.Jump ();
@@ -137,7 +137,7 @@ public class PlayerController : PlayerManager {
 						}
 
 						//Jump with y and x aceleration
-						if (Input.GetButtonDown("Jump") && controller.isGrounded == true && movement.x != IDLE) {
+						if (Input.GetKeyDown(KeyCode.UpArrow) && controller.isGrounded == true && movement.x != IDLE) {
 			
 			
 								this.MoveJump ();
@@ -167,7 +167,7 @@ public class PlayerController : PlayerManager {
 
 
 
-		if (Input.GetAxis ("Horizontal") == FORWARD ) {
+		if (Input.GetKey(KeyCode.RightArrow)) {
 			
 			movement.x = this.getSpeedMultiplier() * speed;
 
@@ -175,7 +175,7 @@ public class PlayerController : PlayerManager {
 			this.transform.rotation = rotation;
 
 		} 
-		else if(Input.GetAxis ("Horizontal") == BACKWARD ) {
+		else if(Input.GetKey(KeyCode.LeftArrow)) {
 			
 			movement.x = -this.getSpeedMultiplier() * speed;
 

@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour {
 	public PlayerController playerPrefab;
 	public CameraPlayer cameraPrefab;
 	public GUIBasic menu;
-	public MenuPause pauseMenu;
 	public Camera cameraMenu, cameraEnd;
 
 
@@ -51,7 +50,7 @@ public class GameManager : MonoBehaviour {
 
 			if (Input.GetKeyDown (KeyCode.Escape)) {
 
-				pauseMenu.PauseActive();
+				menu.PauseGame();
 			}
 		}
 
@@ -80,7 +79,7 @@ public class GameManager : MonoBehaviour {
 
 	public void Load(int scene){
 
-		menu.gameObject.SetActive(false);
+		menu.PrincipalMenuActive (false);
 
 		for(int i = 0; i < scenesPrefab.Length; i++){
 			

@@ -1,14 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuPause.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Trigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\GUIBasic.cs" Line="8" Column="2" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="20" Column="35" />
-      <File FileName="Assets\Scripts\MenuPause.cs" Line="20" Column="19" />
+      <File FileName="Assets\Scripts\GUIBasic.cs" Line="121" Column="5" />
+      <File FileName="Assets\Scripts\GameManager.cs" Line="53" Column="19" />
+      <File FileName="Assets\Scripts\Elevator.cs" Line="152" Column="37" />
+      <File FileName="Assets\Scripts\Trigger.cs" Line="36" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Igor\Documents\FinalProject\Assets\Scripts\GUIBasic.cs" line="119" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

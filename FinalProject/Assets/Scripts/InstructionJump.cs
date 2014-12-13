@@ -3,7 +3,7 @@ using System.Collections;
 
 public class InstructionJump : MonoBehaviour {
 
-	private string[] Messages = new string[] { 	"Press space bar to Jump",
+	private string[] Messages = new string[] { 	"Press ↑ up arrow to Jump",
 												"Space Bar to jump",
 	};
 	private bool setText = false;
