@@ -2,10 +2,11 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Trigger.cs">
     <Files>
-      <File FileName="Assets\Scripts\GUIBasic.cs" Line="121" Column="5" />
-      <File FileName="Assets\Scripts\GameManager.cs" Line="53" Column="19" />
-      <File FileName="Assets\Scripts\Elevator.cs" Line="152" Column="37" />
-      <File FileName="Assets\Scripts\Trigger.cs" Line="36" Column="20" />
+      <File FileName="Assets\Scripts\Trigger.cs" Line="8" Column="26" />
+      <File FileName="Assets\Scripts\Button.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Elevator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\OnButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RopeBoxTrap.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

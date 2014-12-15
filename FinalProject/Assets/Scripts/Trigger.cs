@@ -13,7 +13,7 @@ public class Trigger : MonoBehaviour {
 		}
 	}
 
-	public bool state = false;
+	private bool state = false;
 
 	void OnTriggerEnter(Collider col){
 		
