@@ -61,6 +61,7 @@
      <Compile Include="Assets\Packages\SciFi level\Editor\Image Effects\TonemappingEditor.js" />
      <Compile Include="Assets\Packages\SciFi level\Editor\Image Effects\VignettingEditor.js" />
      <None Include="Assets\Packages\Earthborn Troll\Shader\Alpha_Texture.shader" />
+     <None Include="Assets\SciFi_Door\readme.txt" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -112,7 +113,6 @@
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
-     <None Include="Assets\Packages\SciFi_Door\readme.txt" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\Packages\Sci-Fi Music Pack\License.txt" />
      <None Include="Assets\Packages\SciFi level\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
@@ -138,10 +138,10 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.SqliteClient">
- <HintPath>C:/Users/Igor/Documents/FinalProject/Assets/Plugins/SQLite dlls/Mono.Data.SqliteClient.dll</HintPath>
+ <HintPath>C:/Users/Igor/Documents/GitHub/Project-Limbo/FinalProject/Assets/Plugins/SQLite dlls/Mono.Data.SqliteClient.dll</HintPath>
  </Reference>
  <Reference Include="System.Data">
- <HintPath>C:/Users/Igor/Documents/FinalProject/Assets/Plugins/SQLite dlls/System.Data.dll</HintPath>
+ <HintPath>C:/Users/Igor/Documents/GitHub/Project-Limbo/FinalProject/Assets/Plugins/SQLite dlls/System.Data.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

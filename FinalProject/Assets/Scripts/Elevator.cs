@@ -117,6 +117,7 @@ public class Elevator : MonoBehaviour {
 					
 					CloseDoors();
 					Move ();
+					canCall = false;
 					
 				}
 			}else{
@@ -145,6 +146,7 @@ public class Elevator : MonoBehaviour {
 					
 					CloseDoors();
 					Move ();
+					canCall = false;
 					
 				}
 			}else{
